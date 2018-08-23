@@ -1,0 +1,119 @@
+catmini:testwebfeatures cat$ yarn run wdio
+yarn run v1.9.4
+$ /Users/cat/gooberu/testwebfeatures/node_modules/.bin/wdio
+(node:22239) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:22242) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:22240) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:22241) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Under
+------------------------------------------------------------------
+[chrome #0-1] Session ID: 7c6f1b0e0f659cab2cdffcb756f13bc2
+[chrome #0-1] Spec: /Users/cat/gooberu/testwebfeatures/src/features/githubSearch.feature
+[chrome #0-1] Running: chrome
+[chrome #0-1]
+[chrome #0-1] Github test
+[chrome #0-1]
+[chrome #0-1]     open URL
+[chrome #0-1]       ✓ I open the url "https://github.com/"
+[chrome #0-1]       ✓ I expect the url to contain "github.com"
+[chrome #0-1]       ✓ I expect that the title is "The world’s leading software development platform · GitHub"
+[chrome #0-1]
+[chrome #0-1]         search for webdriverio repository
+[chrome #0-1]           ✓ I open the url "https://github.com/search"
+[chrome #0-1]           ✓ the element "[placeholder='Search GitHub']" not contains any text
+[chrome #0-1]           ✓ I add "webdriverio" to the inputfield "[placeholder='Search GitHub']"
+[chrome #0-1]           ✓ I press "Space"
+[chrome #0-1]           ✓ I add "selenium" to the inputfield "[placeholder='Search GitHub']"
+[chrome #0-1]           ✓ I press "Enter"
+[chrome #0-1]           ✓ I expect that element ".header-search-input" contains the text "webdriverio selenium"
+[chrome #0-1]           ✓ I expect that element ".repo-list-item:first-child" contains the text "A Node.js bindings implementation for the W3C WebDriver protocol"
+[chrome #0-1]
+[chrome #0-1]
+[chrome #0-1] 11 passing (8s)
+[chrome #0-1]
+
+------------------------------------------------------------------
+[chrome #0-2] Session ID: f2c7f25ff3bc0da22556a82b3141226e
+[chrome #0-2] Spec: /Users/cat/gooberu/testwebfeatures/src/features/testwebapp-ux-subjectsPage.feature
+[chrome #0-2] Running: chrome
+[chrome #0-2]
+[chrome #0-2] Perform a GooberU Subject Search
+[chrome #0-2]
+[chrome #0-2]     Performing a GooberU subject search
+[chrome #0-2]       ✓ I am on the GooberU site "/subjects" page
+[chrome #0-2]       ✓ I see the GooberU Subject search box
+[chrome #0-2]       ✓ I enter "<search-text>" into the GooberU search box
+[chrome #0-2]       ✓ I should see a list of GooberU search results
+[chrome #0-2]
+[chrome #0-2]
+[chrome #0-2] 4 passing (8s)
+[chrome #0-2]
+
+------------------------------------------------------------------
+[chrome #0-0] Session ID: 7646f5c3df74847addee1ce30687a25c
+[chrome #0-0] Spec: /Users/cat/gooberu/testwebfeatures/src/features/githubexample-po.feature
+[chrome #0-0] Running: chrome
+[chrome #0-0]
+[chrome #0-0] Performing a github Search
+[chrome #0-0]
+[chrome #0-0]     Performing a github search
+[chrome #0-0]       ✓ I am on the github page
+[chrome #0-0]       ✓ I see the github search box
+[chrome #0-0]       ✓ I enter "webdriverIO" into the github search box
+[chrome #0-0]       ✓ I hit the "Return" key
+[chrome #0-0]       ✓ I should see a list of github search results
+[chrome #0-0]
+[chrome #0-0]
+[chrome #0-0] 5 passing (10s)
+[chrome #0-0]
+
+------------------------------------------------------------------
+[chrome #0-3] Session ID: 413ef9acf7efdf61c6ef06f53c502f30
+[chrome #0-3] Spec: /Users/cat/gooberu/testwebfeatures/src/features/testwebapp-ux-tabPages.feature
+[chrome #0-3] Running: chrome
+[chrome #0-3]
+[chrome #0-3] GooberU UX Portal taskPage Check Test
+[chrome #0-3]
+[chrome #0-3]     GooberU-PortalCheck Hardcode
+[chrome #0-3]       ✓ I open the url "http://localhost:3000"
+[chrome #0-3]       ✓ I expect that the url is "http://localhost:3000/"
+[chrome #0-3]       ✓ I expect that the title is "GooberU App"
+[chrome #0-3]
+[chrome #0-3]         GooberU-PortalCheck tab Pages
+[chrome #0-3]           ✓ I open the url "<url>"
+[chrome #0-3]           ✓ I expect that the url is "<url>"
+[chrome #0-3]           ✓ I expect that the title is "<title>"
+[chrome #0-3]           ✓ I expect that button "<button>" contains the text "<buttonText>"
+[chrome #0-3]
+[chrome #0-3]             GooberU-PortalCheck tab Pages
+[chrome #0-3]               ✓ I open the url "<url>"
+[chrome #0-3]               ✓ I expect that the url is "<url>"
+[chrome #0-3]               ✓ I expect that the title is "<title>"
+[chrome #0-3]               ✓ I expect that button "<button>" contains the text "<buttonText>"
+[chrome #0-3]
+[chrome #0-3]                 GooberU-PortalCheck tab Pages
+[chrome #0-3]                   ✓ I open the url "<url>"
+[chrome #0-3]                   ✓ I expect that the url is "<url>"
+[chrome #0-3]                   ✓ I expect that the title is "<title>"
+[chrome #0-3]                   ✓ I expect that button "<button>" contains the text "<buttonText>"
+[chrome #0-3]
+[chrome #0-3]                     GooberU-PortalCheck tab Pages
+[chrome #0-3]                       ✓ I open the url "<url>"
+[chrome #0-3]                       ✓ I expect that the url is "<url>"
+[chrome #0-3]                       ✓ I expect that the title is "<title>"
+[chrome #0-3]                       ✓ I expect that button "<button>" contains the text "<buttonText>"
+[chrome #0-3]
+[chrome #0-3]
+[chrome #0-3] 19 passing (10s)
+[chrome #0-3]
+
+
+
+==================================================================
+Number of specs: 4
+
+
+39 passing (13.10s)
+
+✨  Done in 13.96s.
+catmini:testwebfeatures cat$
